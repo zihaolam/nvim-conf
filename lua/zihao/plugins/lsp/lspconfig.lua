@@ -126,6 +126,21 @@ return {
                     },
                 })
             end,
+            ["eslint"] = function()
+                lspconfig["eslint"].setup({
+                    capabilities = capabilities,
+                    filetypes = {
+                        "javascript",
+                        "javascriptreact",
+                        "typescript",
+                        "typescriptreact",
+                        "svelte",
+                    },
+                    settings = {
+                        workingDirectories = { mode = "auto" },
+                    },
+                })
+            end,
             ["lua_ls"] = function()
                 -- configure lua server (with special settings)
                 lspconfig["lua_ls"].setup({

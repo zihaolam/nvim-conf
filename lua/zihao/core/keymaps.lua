@@ -21,3 +21,10 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+keymap.set("n", "<leader>cc", "<cmd>CopilotChatToggle<CR>", { desc = "Open copilot chat" }) -- open copilot chat
+
+keymap.set("i", "<C-h>", "<Left>", { desc = "Left during insert mode" }) -- open new tab
+keymap.set("i", "<C-j>", "<Down>", { desc = "Down during insert mode" }) -- close current tab
+keymap.set("i", "<C-k>", "<Up>", { desc = "Up during insert mode" }) --  go to next tab
+keymap.set("i", "<C-l>", "<Right>", { desc = "Right during insert mode" }) --  go to previous tab

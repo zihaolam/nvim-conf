@@ -29,7 +29,8 @@ return {
             ensure_installed = {
                 "tsserver",
                 "html",
-                "biome",
+                --[[ "biome", ]]
+                "eslint",
                 "cssls",
                 "tailwindcss",
                 "svelte",
@@ -49,7 +50,6 @@ return {
                 "isort", -- python formatter
                 "black", -- python formatter
                 "pylint",
-                "eslint_d",
                 "golines",
             },
         })
