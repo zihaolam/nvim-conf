@@ -55,11 +55,11 @@ return {
                 theme = my_lualine_theme,
             },
             sections = {
-                lualine_a = {
+                lualine_c = {
                     {
                         "filename",
                         file_status = true,
-                        path = 2,
+                        path = 1,
                     },
                 },
                 lualine_x = {
