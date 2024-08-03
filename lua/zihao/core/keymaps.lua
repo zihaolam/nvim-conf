@@ -28,3 +28,8 @@ keymap.set("i", "<C-h>", "<Left>", { desc = "Left during insert mode" }) -- open
 keymap.set("i", "<C-j>", "<Down>", { desc = "Down during insert mode" }) -- close current tab
 keymap.set("i", "<C-k>", "<Up>", { desc = "Up during insert mode" }) --  go to next tab
 keymap.set("i", "<C-l>", "<Right>", { desc = "Right during insert mode" }) --  go to previous tab
+
+vim.keymap.set("n", "<leader>cp", function()
+    local filepath = vim.fn.fnameescape(vim.fn.fnamemodify(vim.fn.expand("%"), ":p"))
+    vim.fn.setreg("+", filepath)
+end, { noremap = true, silent = true })
